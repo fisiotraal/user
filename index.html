@@ -57,58 +57,12 @@
             font-size: 1.2rem;
             color: white;
         }
-
-        h1 {
-            margin: 0;
-            font-size: 2.5rem;
-            color: #333;
-        }
-
-        .login-container {
-            background-color: #fff;
-            padding: 20px 40px;
-            border-radius: 15px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            max-width: 300px;
-            margin: 0 auto;
-        }
-
-        input[type="text"], input[type="password"] {
-            width: 100%;
-            padding: 10px;
-            margin: 10px 0;
-            border: 1px solid #ccc;
-            border-radius: 10px;
-            font-size: 1rem;
-        }
-
-        button {
-            width: 100%;
-            padding: 10px;
-            background-color: #007bff;
-            color: #fff;
-            border: none;
-            border-radius: 10px;
-            font-size: 1rem;
-            cursor: pointer;
-            transition: background-color 0.3s ease;
-        }
-
-        button:hover {
-            background-color: #0056b3;
-        }
-
-        .error {
-            color: red;
-            margin-top: 10px;
-            font-size: 0.9rem;
-        }
     </style>
 </head>
 <body>
     <div class="sidebar">
         <div class="profile-info">
-            <img src="https://via.placeholder.com/100" alt="Foto de perfil">
+            <img src="logo.png" alt="Foto de perfil">
             <h3>Fisiotraal</h3>
             <p>Fecha de creación: 2025-02-07</p>
         </div>
@@ -118,27 +72,8 @@
     </div>
 
     <div class="main-content">
-        <h1>Iniciar Sesión</h1>
-        <div class="login-container">
-            <input type="text" id="username" placeholder="Usuario">
-            <input type="password" id="password" placeholder="Contraseña">
-            <button onclick="login()">Iniciar Sesión</button>
-            <div class="error" id="error-message"></div>
-        </div>
+        <h1>Información de Usuario</h1>
+        <p>Aquí se muestra toda la información del usuario, incluida la foto de perfil y la fecha de creación de la cuenta.</p>
     </div>
-
-    <script>
-        function login() {
-            const username = document.getElementById('username').value;
-            const password = document.getElementById('password').value;
-            const errorMessage = document.getElementById('error-message');
-
-            if (username === 'Fisiotraal' && password === 'Vwborad5h') {
-                window.location.href = 'https://fisiotraal.github.io/system';
-            } else {
-                errorMessage.textContent = 'Usuario o contraseña incorrectos';
-            }
-        }
-    </script>
 </body>
 </html>
